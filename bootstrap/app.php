@@ -12,9 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->use([
-            SuperAdminMiddleware::class
-        ]);
+//        $middleware->use([
+//            SuperAdminMiddleware::class
+//        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

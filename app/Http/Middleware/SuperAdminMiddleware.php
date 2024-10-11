@@ -17,11 +17,17 @@ class SuperAdminMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         // Check if the authenticated user is a super admin
-        if (Auth::check() && Auth::user()->is_super_admin) {
+        if (Auth::check() && Auth::user()->is_super_admin === true) {
             return $next($request);
         }
 
-        // Redirect or abort if not a super admin
+        // Prevent redirecting to the same route and causing a loop
+        if ($request->is('/')) {
+            return $next($request);  // Allow access to the home route
+        }
+
+        // Redirect or abort if not a super admin and trying to access a protected route
         return redirect('/')->with('error', 'Unauthorized access.');
     }
+
 }
