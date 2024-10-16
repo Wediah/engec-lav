@@ -68,26 +68,27 @@
                 </h1>
             </div>
             <div class="flex flex-col md:flex-row gap-4">
-                <div class="w-full md:w-[15.625rem] h-[37.5rem] bg-white overflow-hidden">
+                <div class="w-full md:w-[16.625rem] h-[37.5rem] bg-white overflow-hidden">
                     <img src="{{ asset('assets/eastern1.png') }}" alt="Image description" class="w-full h-full
                     object-cover" />
                 </div>
-                <div class="relative w-full md:w-[15.625rem] h-[37.5rem] bg-white overflow-hidden border border-yellow-400">
+                <div class="relative w-full md:w-[16.625rem] h-[37.5rem] bg-white overflow-hidden border
+                border-yellow-400">
                     <img src="{{ asset('assets/eastern5.png') }}" alt="Image description" class="w-full h-full object-cover" />
                     <!-- Overlay Text at the Bottom -->
                     <div class="absolute bottom-0 left-0 right-0 p-2">
                         <a href="/about" class="text-left text-xl font-semibold text-blue-800">Read more about us</a>
                     </div>
                 </div>
-                <div class="w-full md:w-[15.625rem] h-[37.5rem] bg-white overflow-hidden">
+                <div class="w-full md:w-[16.625rem] h-[37.5rem] bg-white overflow-hidden">
                     <img src="{{ asset('assets/eastern2.png') }}" alt="Image description" class="w-full h-full
                     object-cover" />
                 </div>
-                <div class="w-full md:w-[15.625rem] h-[37.5rem] bg-white overflow-hidden">
+                <div class="w-full md:w-[16.625rem] h-[37.5rem] bg-white overflow-hidden">
                     <img src="{{ asset('assets/eastern3.png') }}" alt="Image description" class="w-full h-full
                     object-cover" />
                 </div>
-                <div class="w-full md:w-[15.625rem] h-[37.5rem] bg-white overflow-hidden">
+                <div class="w-full md:w-[16.625rem] h-[37.5rem] bg-white overflow-hidden">
                     <img src="{{ asset('assets/eastern4.png') }}" alt="Image description" class="w-full h-full
                     object-cover" />
                 </div>
