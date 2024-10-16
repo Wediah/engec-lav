@@ -101,7 +101,7 @@
             <h1 class="font-bold text-lg pb-4">CHECK OUT OUR RECENTLY COMPLETED PROJECTS.</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 @foreach($projects as $project)
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                             <img src="{{ $project->projectImages->first()->image_path }}" alt="Project Image"
                                  class="w-full h-[300px]">
                         <div class="p-5">
@@ -112,7 +112,7 @@
                             </a>
                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center
                             text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none
-                            focus:ring-blue-700 dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            focus:ring-blue-700">
                                 Read more
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -129,37 +129,37 @@
             <h1 class="font-bold text-2xl md:text-4xl text-black">
                 WHAT OUR CLIENTS SAY ABOUT US.
             </h1>
-            <div class="grid mb-8 border border-gray-200 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2
-            bg-white dark:bg-gray-800 mt-4">
-                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 text-black">Great expertise</h3>
+            <div class="grid mb-8 border border-gray-200 shadow-sm md:mb-12 md:grid-cols-2
+            bg-white mt-4">
+                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+                        <h3 class="text-lg font-semibold text-gray-900">Great expertise</h3>
                         <p class="my-4">"Working with Engec Limited has been a game-changer for our projects. Their expertise in water and sanitation engineering is unparalleled, and their commitment to delivering on time and within budget is commendable. They’re our go-to partner for infrastructure solutions."
                         </p>
                     </blockquote>
                     <figcaption class="flex items-center justify-center ">
                         <div class="space-y-0.5 font-medium text-black text-left rtl:text-right ms-3">
                             <div>Kwame Agyemang</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400 ">CEO, ConstructPro Ltd</div>
+                            <div class="text-sm text-gray-500 ">CEO, ConstructPro Ltd</div>
                         </div>
                     </figcaption>
                 </figure>
-                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 text-black">Exceptional Engineering
+                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+                        <h3 class="text-lg font-semibold text-gray-900">Exceptional Engineering
                             Services</h3>
                         <p class="my-4">"Engec Limited provided us with exceptional engineering services on a recent residential development project. From design to execution, their attention to detail and focus on safety gave us confidence throughout the process. We’re extremely satisfied with their work</p>
                     </blockquote>
                     <figcaption class="flex items-center justify-center ">
                         <div class="space-y-0.5 font-medium text-black text-left rtl:text-right ms-3">
                             <div>Ama Boakyewaa</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Project Manager, GreenBuild Africa</div>
+                            <div class="text-sm text-gray-500">Project Manager, GreenBuild Africa</div>
                         </div>
                     </figcaption>
                 </figure>
-                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 text-black">Deep Technical Knowledge and
+                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+                        <h3 class="text-lg font-semibold text-gray-900">Deep Technical Knowledge and
                             Problem-solving Skills</h3>
                         <p class="my-4">CityWater Works: "The team at Engec Limited demonstrated deep technical knowledge and problem-solving skills while working on our urban water distribution project. Their innovative solutions and professionalism exceeded our expectations."
                         </p>
@@ -167,19 +167,19 @@
                     <figcaption class="flex items-center justify-center ">
                         <div class="space-y-0.5 font-medium text-black text-left rtl:text-right ms-3">
                             <div>Samuel Osei</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Director of Operations, CityWater Works</div>
+                            <div class="text-sm text-gray-500">Director of Operations, CityWater Works</div>
                         </div>
                     </figcaption>
                 </figure>
-                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 text-black">Efficient Collaborating</h3>
+                <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg ">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+                        <h3 class="text-lg font-semibold text-gray-900">Efficient Collaborating</h3>
                         <p class="my-4">"Engec Limited has been an exceptional partner on several of our collaborative projects. Their technical proficiency and project management capabilities have consistently impressed us. From concept to completion, they delivered high-quality engineering solutions with unmatched professionalism. We look forward to future partnerships."</p>
                     </blockquote>
                     <figcaption class="flex items-center justify-center ">
                         <div class="space-y-0.5 font-medium text-black text-left rtl:text-right ms-3">
                             <div>Dennis Nsoh</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Managing Director, Qualiden
+                            <div class="text-sm text-gray-500">Managing Director, Qualiden
                                 Engineering</div>
                         </div>
                     </figcaption>
@@ -193,7 +193,7 @@
             </h1>
             <div class="bg-white">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 items-center justify-center">
-                    <div class="mx-auto mt-10 grid max-w-lg grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3
+                    <div class="mx-auto mt-10 grid max-w-lg grid-cols-2 gap-x-2 gap-y-1 sm:grid-cols-3
                     lg:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none gap-6">
                         <img class="max-h-12 w-full object-contain" src="{{ asset('assets/looo.jpg') }}"
                              alt="Transistor" width="158"

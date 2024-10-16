@@ -17,7 +17,7 @@
     <div class="flex flex-col md:flex-row gap-6 flex-wrap w-screen pt-6 pb-6">
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/desihn.jpg') }}" alt="" />
             </a>
@@ -26,19 +26,19 @@
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">DESIGN AND
                         BUILD</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">From commercial and residential
+                <p class="mb-3 font-normal text-gray-700 ">From commercial and residential
                     developments to infrastructure projects, we specialize in delivering higher quality construction services that exceed clients expectations </p>
             </div>
         </div>
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/arch.jpg') }}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">ARCHITECTURAL
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">ARCHITECTURAL
                         DESIGN</h5>
                 </a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We offer architectural design services
@@ -47,61 +47,61 @@
         </div>
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/solar.jpeg') }}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">SOLAR
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">SOLAR
                         INSTALLATIONS</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Engec group provides state of the art
+                <p class="mb-3 font-normal text-gray-700 ">Engec group provides state of the art
                     solar energy solutions for residential rooftop solutions to large scale solar farms.</p>
             </div>
         </div>
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/reno1.jpg') }}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">RENOVATIONS</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">RENOVATIONS</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Whether it is a residential property or
+                <p class="mb-3 font-normal text-gray-700 ">Whether it is a residential property or
                     a commercial space engine group specializes in renovations that breathe new life into existing structures.</p>
             </div>
         </div>
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/real.jpg') }}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">REAL ESTATES
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">REAL ESTATES
                         DEVELOPMENT</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Engec group is a leader in real
+                <p class="mb-3 font-normal text-gray-700 ">Engec group is a leader in real
                     estate development offering end to end services that transform land into driving communities. Our
                     developments are characterized by quality construction innovation design and sustainable practices.</p>
             </div>
         </div>
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('assets/awim.jpg') }}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">SWIMMING POOL
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">SWIMMING POOL
                         CONSTRUCTION</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We specialize in the desire and
+                <p class="mb-3 font-normal text-gray-700 ">We specialize in the desire and
                     construction of custom swimming pools from luxurious residential polls to large scale commercial installations our team ensures that every pool is built to the highest standards of safety functionality and esthetic appeal.</p>
             </div>
         </div>
