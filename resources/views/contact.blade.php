@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'Contact')
+
     <div class="grid md:grid-cols-2 gap-6">
         <div class="3/5">
             <img src="{{ asset('assets/Aburi2.jpg') }}" class="h-full w-full object-cover rounded-md" alt="Random

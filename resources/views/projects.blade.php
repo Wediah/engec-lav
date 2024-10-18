@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'Your Projects')
+
     <main>
         <div class="bg-gray-50 py-6 sm:py-32">
             <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

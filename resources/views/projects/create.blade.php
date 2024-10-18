@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'New Project')
+
 <main class="mx-auto md:px-10">
     <div>
         <a href="{{ route('dashboard') }}" class="bg-blue-800 text-white font-medium text-lg p-2

@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'Project')
+
     <div>
         <div class="relative">
             <img src="{{ $project->projectImages->first()->image_path }}" alt="{{ $project->name }}"

@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'Home')
+
     <main class="font-sans text-black/50">
         <section class="bg-white w-full h-full pb-6">
 {{--            <img src="{{ asset('assets/land.png') }}" alt="" class="w-full h-full md:object-cover sm:object-fill">--}}

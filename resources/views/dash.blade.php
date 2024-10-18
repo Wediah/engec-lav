@@ -1,4 +1,6 @@
 <x-layout>
+    @section('title', 'Your Dashboard')
+
     <div class="md:mx-10">
         <div class="flex justify-between">
             <h1 class="font-bold text-lg">All Projects</h1>
