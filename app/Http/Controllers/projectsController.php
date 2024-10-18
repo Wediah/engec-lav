@@ -59,4 +59,11 @@ class projectsController extends Controller
 
         return redirect()->back()->with('success', 'Project created successfully!');
     }
+
+    public function show($slug)
+    {
+        $project = projects::with('projectImages')->where('slug', $slug)->first();
+
+        return view('show', compact('project'));
+    }
 }

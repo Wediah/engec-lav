@@ -9,7 +9,7 @@
                         <div class="relative overflow-hidden
                             {{ $index === 0 ? 'lg:col-span-4 lg:row-span-4' : 'lg:col-span-2 lg:row-span-4' }}"
                         >
-                            <a href="#">
+                            <a href="{{ route('project.show', ['slug' => $project->slug]) }}">
                                 <!-- Project Image -->
                                 <img src="{{ $project->projectImages->first()->image_path }}" alt="{{ $project->name }}"
                                      class="w-full h-96 object-fill rounded-md">

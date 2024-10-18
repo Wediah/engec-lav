@@ -17,6 +17,7 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/project/{slug}', [ProjectsController::class, 'show'])->name('project.show');
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
