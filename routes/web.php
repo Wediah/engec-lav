@@ -27,10 +27,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/admin/project/create', [projectsController::class, 'create'])->name('project.create');
+    Route::post('/admin/project/store', [projectsController::class, 'store'])->name('project.store');
+    Route::post('/admin/project/{id}delete', [projectsController::class, 'delete'])->name('project.delete');
+    Route::get('/admin/dashboard', [projectsController::class, 'dash'])->name('dashboard');
 });
 
-Route::get('/admin/project/create', [projectsController::class, 'create'])->name('project.create');
-Route::post('/admin/project/store', [projectsController::class, 'store'])->name('project.store');
+
 
 
 require __DIR__.'/auth.php';

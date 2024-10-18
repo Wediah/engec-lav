@@ -66,4 +66,30 @@ class projectsController extends Controller
 
         return view('show', compact('project'));
     }
+
+    public function dash()
+    {
+        $projects = projects::with('projectImages')->get();
+
+        return view('dash', compact('projects'));
+    }
+
+    public function edit()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function delete($id)
+    {
+        $project = projects::findOrFail($id);
+
+        $project->delete();
+
+        return redirect()->intended(route('dashboard', absolute: false));
+    }
 }
