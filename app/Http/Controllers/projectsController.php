@@ -28,6 +28,9 @@ class projectsController extends Controller
             'end_date' => 'nullable|date',
             'location' => 'required|max:255',
             'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'firm' => 'required|max:255',
+            'type' => 'required|max:255',
+            'status' => 'required|max:255',
         ]);
 
         $imagePaths = [];
@@ -46,6 +49,9 @@ class projectsController extends Controller
             'start_date' => $validatedData['start_date'],
             'end_date' => $validatedData['end_date'],
             'location' => $validatedData['location'],
+            'firm' => $validatedData['firm'],
+            'type' => $validatedData['type'],
+            'status' => $validatedData['status'],
         ];
 
         $project = projects::create($projectData);
