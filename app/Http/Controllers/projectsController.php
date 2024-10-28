@@ -27,7 +27,7 @@ class projectsController extends Controller
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date',
             'location' => 'required|max:255',
-            'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:5120',
             'firm' => 'required|max:255',
             'type' => 'required|max:255',
             'status' => 'required|max:255',
