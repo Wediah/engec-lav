@@ -18,7 +18,7 @@
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-row items-center gap-4">
                         <!-- Project Image -->
-                        <img src="{{ $project->projectImages->first()->image_path }}" alt="{{ $project->name }}"
+                        <img src="{{ $project->projectImages->first()->image_path ?? asset("assets/Aburi1.jpg") }}" alt="{{ $project->name }}"
                              class="w-20 h-20 object-fill rounded-md">
                         <div class="">
                             <h2 class="text-2xl font-bold">{{ $project->name }}</h2>

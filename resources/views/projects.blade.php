@@ -13,7 +13,8 @@
                         >
                             <a href="{{ route('project.show', ['slug' => $project->slug]) }}">
                                 <!-- Project Image -->
-                                <img src="{{ $project->projectImages->first()->image_path }}" alt="{{ $project->name }}"
+                                <img src="{{ $project->projectImages->first()->image_path ?? asset("assets/Aburi1.jpg") }}" alt="{{ $project->name
+                                 }}"
                                      class="w-full h-96 object-fill rounded-md">
 
                                 <!-- Project Details - Text at Bottom Left -->
