@@ -105,7 +105,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 @foreach($projects as $project)
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                            <img src="{{ $project->projectImages->first()->image_path }}" alt="Project Image"
+                            <img src="{{ $project->projectImages->first()->image_path ?? asset("assets/Aburi1.jpg") }}" alt="Project Image"
                                  class="w-full h-[300px]">
                         <div class="p-5">
                             <a href="#">
