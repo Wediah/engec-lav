@@ -7,6 +7,7 @@
     <title>Engec | @yield('title')</title>
     <link rel="icon" href="{{ asset('assets/engeclogo.png') }}" type="image/x-icon">
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -69,6 +70,12 @@
 
 <div class=" mx-auto px-6">
     {{ $slot }}
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </div>
 
 <footer class="bg-transparent rounded-lg shadow m-4">

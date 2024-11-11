@@ -7,7 +7,7 @@
             <div class="container mx-auto py-6">
                 <!-- Image Section -->
                 <div class="grid grid-cols-3 gap-4">
-                    <div class="col-span-2">
+                    <div  class="col-span-2">
                         <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                             We Take Your <span class="underline">Dream</span> Home <br>
                             <span class="italic">& Make It Real</span>
@@ -30,7 +30,7 @@
                                 Our services
                             </a>
                         </div>
-                        <div class="">
+                        <div data-aos="fade-up" data-aos-delay="0" class="">
                             <img src="{{ asset('assets/Aburi1.jpg') }}" alt="Project 1" class="w-full h-full
                             object-cover rounded-3xl">
                         </div>
@@ -38,13 +38,14 @@
                     </div>
 
                     <!-- Image 2 -->
-                    <div class="col-start-2 row-span-1 ">
+                    <div data-aos="fade-up" data-aos-delay="200" class="col-start-2 row-span-1 ">
                         <img src="{{ asset('assets/Aburi2.jpg') }}" alt="Project 2" class="w-full h-full object-cover
                          rounded-3xl">
                     </div>
 
                     <!-- Image 3 -->
-                    <div class="col-start-3 row-start-1 row-end-3 row-span-1 relative">
+                    <div data-aos="fade-up" data-aos-delay="400" class="col-start-3 row-start-1 row-end-3 row-span-1
+                    relative">
                         <img src="{{ asset('assets/Dodowa2.jpg') }}" alt="Project 3" class="w-full h-full
                         object-cover rounded-3xl">
 
@@ -69,7 +70,7 @@
                 APPROACHES, WE FACTOR IN ALL YOUR NEEDS AND PRESENT YOU AN EXPERIENCE THAT FITS YOUR IMAGINATION WHETHER IT BEING A UNIQUE LANDSCAPE, A BUSTLING CITY SCENARIO OR THE LIVELY PEOPLE AND THEIR MOVEMENTS.
                 </h1>
             </div>
-            <div class="flex flex-col md:flex-row gap-4">
+            <div data-aos="fade-up" class="flex flex-col md:flex-row gap-4">
                 <div class="w-full md:w-[17.625rem] h-[37.5rem] bg-white overflow-hidden">
                     <img src="{{ asset('assets/eastern1.png') }}" alt="Image description" class="w-full h-full
                     object-cover" />
