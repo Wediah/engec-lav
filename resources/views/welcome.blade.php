@@ -130,7 +130,7 @@
                             <p class="capitalize text-md py-2">{{ $project->name }}</p>
                         </a>
                     @endforeach
-                        <div class="relative h-full w-full">
+                        <div class="relative h-full w-full hidden md:block">
                             <a class="absolute bottom-20 right-0 group text-lg font-semibold inline-flex items-center
                             justify-between border-b-2 pb-1 pt-10 w-80" href="/projects"
                             >
