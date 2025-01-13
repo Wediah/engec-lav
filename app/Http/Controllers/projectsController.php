@@ -23,22 +23,17 @@ class projectsController extends Controller
      */
     #[NoReturn] public function store(Request $request): RedirectResponse
     {
-//        dd($request->all());
-        try {
-            $validatedData = $request->validate([
-                'name' => 'required|max:255',
-                'description' => 'required|max:255',
-                'start_date' => 'nullable|date',
-                'end_date' => 'nullable|date',
-                'location' => 'required|max:255',
-                'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:20480',
-                'firm' => 'required|max:255',
-                'type' => 'required|max:255',
-                'status' => 'required|max:255',
-            ]);
-        } catch (\Illuminate\Validation\ValidationException $e) {
-//            dd($e->errors()); // Dump validation errors
-        }
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'start_date' => 'nullable|date',
+            'end_date' => 'nullable|date',
+            'location' => 'required|max:255',
+            'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:20480',
+            'firm' => 'required|max:255',
+            'type' => 'required|max:255',
+            'status' => 'required|max:255',
+        ]);
 
 
         $imagePaths = [];
