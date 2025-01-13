@@ -89,6 +89,9 @@
             </div>
             <input id="dropzone-file" name="project_images[]" type="file" class="hidden" multiple onchange="previewImages(event)" />
         </label>
+        @error('project_images')
+            <p class="text-red-500 text-sm">{{ $message }}</p>
+        @enderror
         <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 ">
             Publish project
         </button>
@@ -113,7 +116,7 @@
                 // Create a new img element and set its source
                 const img = document.createElement('img');
                 img.src = e.target.result;
-                img.classList.add('h-24', 'w-24', 'm-2', 'object-cover', 'rounded');
+                img.classList.add('h-60', 'w-60', 'm-2', 'object-cover', 'rounded');
 
                 previewContainer.appendChild(img);
             };

@@ -8,6 +8,8 @@ use Cloudinary\Api\Exception\ApiError;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use JetBrains\PhpStorm\NoReturn;
 
 class projectsController extends Controller
 {
@@ -19,19 +21,25 @@ class projectsController extends Controller
     /**
      * @throws ApiError
      */
-    public function store(Request $request): RedirectResponse
+    #[NoReturn] public function store(Request $request): RedirectResponse
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'description' => 'required|max:255',
-            'start_date' => 'nullable|date',
-            'end_date' => 'nullable|date',
-            'location' => 'required|max:255',
-            'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:20480',
-            'firm' => 'required|max:255',
-            'type' => 'required|max:255',
-            'status' => 'required|max:255',
-        ]);
+//        dd($request->all());
+        try {
+            $validatedData = $request->validate([
+                'name' => 'required|max:255',
+                'description' => 'required|max:255',
+                'start_date' => 'nullable|date',
+                'end_date' => 'nullable|date',
+                'location' => 'required|max:255',
+                'project_images.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:20480',
+                'firm' => 'required|max:255',
+                'type' => 'required|max:255',
+                'status' => 'required|max:255',
+            ]);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+//            dd($e->errors()); // Dump validation errors
+        }
+
 
         $imagePaths = [];
 
@@ -63,7 +71,7 @@ class projectsController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('success', 'Project created successfully!');
+        return redirect()->intended(route('dashboard', absolute: false));
     }
 
     public function show($slug)
