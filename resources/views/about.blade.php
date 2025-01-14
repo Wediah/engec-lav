@@ -60,7 +60,7 @@
             </h2>
         </div>
         <div class="basis-1/2">
-            <img src="{{ asset('assets/eastern8.webp') }}" class="h-96 object-cover rounded-md" alt="Random image">
+            <img src="{{ asset('assets/Aburi2.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
         </div>
     </div>
 
