@@ -41,7 +41,8 @@
                 <img src="{{ asset('assets/Dodowa2.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
         </div>
     </div>
-    <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-28 px-6 md:gap-12 gap-4
+    <div class="pt-6 flex flex-col md:flex-row-reverse mx-auto justify-center md:mt-16 mt-4 md:px-28 px-6 md:gap-12
+    gap-4
     items-start">
         <div class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
             <h1 class="font-normal text-4xl text-black">A Vision Built on Achievements</h1>
