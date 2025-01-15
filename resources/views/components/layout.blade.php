@@ -78,15 +78,17 @@
     </script>
 </div>
 
-<footer class="bg-gradient-to-b from-blue-800 to-black p-6">
-    <div class="grid grid-cols-3 gap-12 items-center">
+<footer class="bg-gradient-to-b from-blue-800 to-black p-6 mt-6 ">
+    <div class="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-4 items-center">
         <div>
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="self-center text-6xl font-black whitespace-nowrap text-white">ENGEC GROUP</span>
+                <span class="self-center text-3xl md:text-6xl font-black whitespace-nowrap text-white">ENGEC
+                    GROUP</span>
             </a>
         </div>
         <div>
-            <ul class="flex flex-wrap items-center gap-10 mt-3 font-bold text-white sm:mt-0 text-xl ">
+            <ul class="flex flex-wrap items-center gap-4 md:gap-10 md:mt-3 font-bold text-white sm:mt-0 text-sm
+            md:text-xl ">
                 <li>
                     <a href="/about" class="hover:underline">About</a>
                 </li>
@@ -102,7 +104,8 @@
             </ul>
         </div>
         <div class="">
-            <ul class="flex flex-wrap items-center mt-3 gap-6 font-bold text-white sm:mt-0 text-xl justify-end">
+            <ul class="flex flex-wrap items-center md:mt-3 gap-4 md:gap-6 font-bold text-white sm:mt-0 md:text-xl
+            text-lg md:justify-end">
                 <li>
                     <a href="https://web.facebook.com/people/Engec-Group/100084279907473/?mibextid=ZbWKwL" class="font-bold text-4xl"><i class='bx bxl-facebook-square'></i></a>
                 </li>
@@ -124,7 +127,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-12 items-start mt-8 text-white">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 items-start mt-8 text-white">
         <div>
             <p>
                 © 2024
@@ -139,7 +142,7 @@
             <a href="#" class="text-sm font-bold">Human Rights Policy</a>
         </div>
         <div>
-            <ul class="flex flex-wrap items-center mt-3 gap-6 font-bold text-white sm:mt-0 text-sm justify-end">
+            <ul class="flex flex-wrap items-center mt-3 gap-6 font-bold text-white sm:mt-0 text-sm md:justify-end">
                 <li class="relative after:content-['|'] after:mx-3 after:text-white last:after:content-none">
                     <a href="#" class="hover:underline">License</a>
                 </li>

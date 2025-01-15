@@ -10,7 +10,7 @@
             </h2>
         </div>
     </div>
-    <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-28 px-6 md:gap-12 gap-4
+    <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-28 md:gap-12 gap-4
     items-start">
         <div class="flex flex-row md:basis-1/2">
             <h1 class="font-normal text-4xl text-yellow-400"><span class="text-black">About</span> Engec</h1>
@@ -21,7 +21,7 @@
             exceptional services in architecture, civil, and environmental engineering. Our expertise spans across design, construction, and consultancy, enabling us to transform visions into sustainable realities. Since our inception, ENGEC has successfully designed and executed numerous residential, commercial, and industrial projects throughout Ghana, establishing ourselves as a trusted name in the industry. Our team’s commitment to innovation, quality, and professionalism drives us to continuously meet and exceed the expectations of our diverse Clientele.
         </h2>
     </div>
-    <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-28 px-6 md:gap-12 gap-4
+    <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-28 md:gap-12 gap-4
     items-start">
         <div class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
             <h1 class="font-normal text-4xl text-black">Who We Are</h1>
@@ -41,7 +41,7 @@
                 <img src="{{ asset('assets/Dodowa2.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
         </div>
     </div>
-    <div class="pt-6 flex flex-col md:flex-row-reverse mx-auto justify-center md:mt-16 mt-4 md:px-28 px-6 md:gap-12
+    <div class="pt-6 flex flex-col md:flex-row-reverse mx-auto justify-center md:mt-16 mt-4 md:px-28  md:gap-12
     gap-4
     items-start">
         <div class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
