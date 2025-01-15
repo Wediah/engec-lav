@@ -1,7 +1,7 @@
 <x-layout>
     @section('title', 'Home')
 
-    <main class="font-sans text-black/50">
+    <main class="font-sans text-black/50 px-6">
         <section class="bg-white w-full h-full pb-6">
 {{--            <img src="{{ asset('assets/land.png') }}" alt="" class="w-full h-full md:object-cover sm:object-fill">--}}
             <div class="container mx-auto py-6">

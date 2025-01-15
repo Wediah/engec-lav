@@ -68,7 +68,7 @@
     </div>
 </nav>
 
-<div class=" mx-auto px-6">
+<div class=" mx-auto ">
     {{ $slot }}
 
 
@@ -142,11 +142,11 @@
             <a href="#" class="text-sm font-bold">Human Rights Policy</a>
         </div>
         <div>
-            <ul class="flex flex-wrap items-center mt-3 gap-6 font-bold text-white sm:mt-0 text-sm md:justify-end">
-                <li class="relative after:content-['|'] after:mx-3 after:text-white last:after:content-none">
+            <ul class="flex flex-wrap items-center mt-3 font-bold text-white sm:mt-0 text-sm md:justify-end">
+                <li class="relative after:content-['|'] after:mx-1 after:text-white last:after:content-none">
                     <a href="#" class="hover:underline">License</a>
                 </li>
-                <li class="relative after:content-['|'] after:mx-3 after:text-white last:after:content-none">
+                <li class="relative after:content-['|'] after:mx-1 after:text-white last:after:content-none">
                     <a href="#" class="hover:underline">Privacy Policy</a>
                 </li>
                 <li>

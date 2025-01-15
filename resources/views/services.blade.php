@@ -1,226 +1,202 @@
 <x-layout>
     @section('title', 'Services')
 
-    <div class="relative w-full">
-        <img src="{{ asset('assets/las.jpg') }}" class="h-32 md:h-96 w-full object-cover rounded-md" alt="Random image">
-
-        <div class="absolute inset-x-0 bottom-0 flex justify-center">
-            <h2 class="text-white md:text-9xl sm:text-6xl lg:text-9xl font-black w-full text-left px-2">
-                HOW WE SERVE YOU
-            </h2>
+    <div class="px-6 md:px-0">
+        <div class="flex flex-col gap-2 w-full pl-12 md:pl-24 py-32">
+            <p class="text-sm font-bold text-blue-800">HOW WE SERVE YOU</p>
+            <h1 class="text-3xl md:text-6xl font-normal">Our Services</h1>
         </div>
-    </div>
-    <div class="pt-6">
-        <div class="flex flex-col ">
-            <span class="text-2xl font-medium text-blue-800">OUR SERVICES</span>
-            <h1 class="font-bold text-2xl text-yellow-400">GENERAL CONSTRUCTION AND CIVIL WORKS</h1>
-        </div>
-    </div>
-    <div class="flex flex-col md:flex-row gap-6 flex-wrap w-screen pt-6 pb-6">
+        <div class="flex flex-col md:gap-20 gap">
+            <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-24 md:gap-20 gap-4
+                items-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
+                    <h1 class="font-normal text-4xl text-black">Design and Build</h1>
 
+                    <h2 class="font-normal text-md">
+                        Our Design and Build service streamlines your project, combining innovative architectural design with expert construction. From concept to completion, we deliver efficient, tailored solutions that bring your vision to life. Trust us for quality craftsmanship and seamless execution.
+                    </h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="md:basis-1/2">
+                    <img src="{{ asset('assets/desihn.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col md:flex-row-reverse mx-auto justify-center md:mt-16 mt-4 md:px-24 md:gap-20 gap-4
+                items-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
+                    <h1 class="font-normal text-4xl text-black">Architectural Design</h1>
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/desihn.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800">DESIGN AND
-                        BUILD</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">From commercial and residential
-                    developments to infrastructure projects, we specialize in delivering higher quality construction services that exceed clients expectations </p>
+                    <h2 class="font-normal text-md">
+                        Our Architectural Design service transforms ideas into stunning, functional spaces. We blend creativity with precision to craft designs that reflect your vision and meet your needs. Experience innovative and timeless architecture tailored to perfection.
+                    </h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="md:basis-1/2">
+                    <img src="{{ asset('assets/arch.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-24 md:gap-20 gap-4
+                items-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
+                    <h1 class="font-normal text-4xl text-black">Solar Installation</h1>
+
+                    <h2 class="font-normal text-md">
+                        Our Solar Installation service provides sustainable energy solutions tailored to your needs. We ensure efficient system design, seamless installation, and long-term performance. Harness the power of the sun and reduce your carbon footprint today.
+                    </h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="md:basis-1/2">
+                    <img src="{{ asset('assets/solar.jpeg') }}" class="h-96 object-cover rounded-md" alt="Random image">
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col md:flex-row-reverse mx-auto justify-center md:mt-16 mt-4 md:px-24 md:gap-20 gap-4
+                items-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
+                    <h1 class="font-normal text-4xl text-black">Renovations</h1>
+
+                    <h2 class="font-normal text-md">
+                        Our Renovation service transforms spaces with a focus on quality and precision. Whether upgrading a single room or an entire property, we blend modern design with expert craftsmanship. Breathe new life into your space with our tailored renovation solutions.
+                    </h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="md:basis-1/2">
+                    <img src="{{ asset('assets/reno1.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col md:flex-row mx-auto justify-center md:mt-16 mt-4 md:px-24 md:gap-20 gap-4
+                items-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:gap-6 gap-4 md:basis-1/2">
+                    <h1 class="font-normal text-4xl text-black">Real Estate Development</h1>
+
+                    <h2 class="font-normal text-md">
+                        Our Real Estate services offer comprehensive solutions for buying, selling, and managing properties. With a deep understanding of market trends and client needs, we provide expert guidance and personalized support. From residential to commercial investments, we help you find the perfect property to meet your goals.
+                    </h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="md:basis-1/2">
+                    <img src="{{ asset('assets/real.jpg') }}" class="h-96 object-cover rounded-md" alt="Random image">
+                </div>
             </div>
         </div>
 
+{{--        <div class="flex flex-col gap-2 w-full pl-12 md:pl-24 py-32">--}}
+{{--            <p class="text-sm font-bold text-blue-800">THE EXTRA MILE</p>--}}
+{{--            <h1 class="text-3xl md:text-6xl font-normal">Additional Services</h1>--}}
+{{--        </div>--}}
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/arch.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">ARCHITECTURAL
-                        DESIGN</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We offer architectural design services
-                    that blend creativity and practicality resulting in esthetically pleasing and functional spaces.</p>
-            </div>
-        </div>
+{{--        <div class="px-6 grid grid-cols-1 md:grid-cols-4 gap-4">--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2">--}}
+{{--                <img src="{{ asset('assets/desihn.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Structural Engineering">--}}
 
+{{--                <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/solar.jpeg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">SOLAR
-                        INSTALLATIONS</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Engec group provides state of the art
-                    solar energy solutions for residential rooftop solutions to large scale solar farms.</p>
-            </div>
-        </div>
-
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/reno1.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">RENOVATIONS</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Whether it is a residential property or
-                    a commercial space engine group specializes in renovations that breathe new life into existing structures.</p>
-            </div>
-        </div>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Structural Engineering--}}
+{{--                </h2>--}}
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/mapping.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/real.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">REAL ESTATES
-                        DEVELOPMENT</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Engec group is a leader in real
-                    estate development offering end to end services that transform land into driving communities. Our
-                    developments are characterized by quality construction innovation design and sustainable practices.</p>
-            </div>
-        </div>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Mapping and 3D Modeling--}}
+{{--                </h2>--}}
 
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/gis.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/awim.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">SWIMMING POOL
-                        CONSTRUCTION</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">We specialize in the desire and
-                    construction of custom swimming pools from luxurious residential polls to large scale commercial installations our team ensures that every pool is built to the highest standards of safety functionality and esthetic appeal.</p>
-            </div>
-        </div>
-    </div>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Geographic Information <br>Systems(GIS)--}}
+{{--                </h2>--}}
 
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/consul.jpeg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
-    <span class="text-2xl font-medium text-blue-800 py-6">ADDITIONAL SERVICES SERVICES</span>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Consultancy Services--}}
+{{--                </h2>--}}
 
-    <div class="flex flex-col md:flex-row gap-6 flex-wrap w-screen pt-6 pb-6">
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/survey.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Surveying--}}
+{{--                </h2>--}}
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/desihn.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800">STRUCTURAL ENGINEERING</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">AT Engec Group, our Structural Engineering services
-                    ensure your projects stand strong. We provide innovative, safe, and sustainable design solutions
-                    for building, bridges, and infrastructure.
-                </p>
-            </div>
-        </div>
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/mep.png') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 rounded-md opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    MEP--}}
+{{--                </h2>--}}
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/watersys.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/arch.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">WATER SUPPLY SYSTEMS</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We offer comprehensive water supply and
-                    drainage Engineering services, ensuring that your projects are equipped with efficient,
-                    sustainable, and reliable water management systems.
-                </p>
-            </div>
-        </div>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Water Supply Systems--}}
+{{--                </h2>--}}
+{{--            </div>--}}
+{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
+{{--                <img src="{{ asset('assets/awim.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
+{{--                     alt="Random image"--}}
+{{--                >--}}
+{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 rounded-md opacity-0 group-hover:opacity-100--}}
+{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center">--}}
+{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
+{{--                </div>--}}
 
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/solar.jpeg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">MAPPING AND 3D MODELING</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Engec group provides state of the art
-                    mapping services from sites plans to detailed topographical maps, that support effective project
-                    planning and execution.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/reno1.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">GEOGRAPHIC INFORMATION
-                        SYSTEMS (GIS)</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Whether it being environmental analysis, land use
-                    planning, or resource management, our GIS services are tailored to meet your specific project
-                    needs.</p>
-            </div>
-        </div>
-
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/real.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">Consultancy Services</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Our team of seasoned professionals offer consultancy
-                    services in engineering, construction, and project management. We help you navigate complex
-                    challenges and achieve your goals with tailored solutions.</p>
-            </div>
-        </div>
-
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/awim.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">SURVEYING</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Using the latest surveying technology, we provide precise
-                    measurements and data critical to planning and execution of your projects.
-                </p>
-            </div>
-        </div>
-
-        <div class="max-w-sm bg-white border border-gray-200 rounded-md shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{{ asset('assets/awim.jpg') }}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-800 ">MEP</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">Engec Group delivers top-tier Mechanical, Electrical and
-                    Plumbing Systems that power, connect and sustain your projects. We ensure that your MEP systems
-                    are expertly designed, seamlessly integrated, and efficiently managed.
-                </p>
-            </div>
-        </div>
+{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
+{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
+{{--                    Swimming Pools--}}
+{{--                </h2>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 </x-layout>
