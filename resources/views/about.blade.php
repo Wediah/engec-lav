@@ -1,6 +1,6 @@
 <x-layout>
     @section('title', 'About')
-    <div class="relative w-full">
+    <div class="relative w-full px-6">
         <img src="{{ asset('assets/Aburi1.jpg') }}" class="h-96 w-full object-cover"
              alt="Random
         image">

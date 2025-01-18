@@ -103,7 +103,8 @@
             <h1 class="font-bold text-3xl md:text-6xl text-black py-6">Featured Projects</h1>
             <hr class="bg-black">
 
-            <p class="text-left md:pt-20 pt-4 w-96">Engec group’s work in shaping cities spans diverse projects—from major urban transformations to cozy residential spaces—each reflecting our commitment to innovative design and enhancing the quality of urban life.</p>
+            <p class="text-left md:pt-20 pt-4 md:w-96">Engec group’s work in shaping cities spans diverse projects—from
+                major urban transformations to cozy residential spaces—each reflecting our commitment to innovative design and enhancing the quality of urban life.</p>
             <a class="group text-lg font-semibold w-80 inline-flex items-center justify-between border-b-2 pb-1 pt-10"
                href="/projects">
                 View All Projects
