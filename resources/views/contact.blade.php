@@ -1,7 +1,7 @@
 <x-layout>
     @section('title', 'Contact')
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid md:grid-cols-2 gap-6 px-6">
         <div class="3/5">
             <img src="{{ asset('assets/Aburi2.jpg') }}" class="h-full w-full object-cover rounded-md" alt="Random
             image">
@@ -65,7 +65,7 @@
             </form>
         </div>
     </div>
-    <div class="pt-6">
+    <div class="pt-6 px-6">
         <button class="text-sm rounded-full p-2 border border-yellow-400 text-blue-800">Reach Out To Us</button>
 
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-4">

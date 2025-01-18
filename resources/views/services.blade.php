@@ -1,7 +1,7 @@
 <x-layout>
     @section('title', 'Services')
 
-    <div class="px-6 md:px-0">
+    <div class="px-6 md:px-0 bg-gray-100">
         <div class="flex flex-col gap-2 w-full pl-12 md:pl-24 py-32">
             <p class="text-sm font-bold text-blue-800">HOW WE SERVE YOU</p>
             <h1 class="text-3xl md:text-6xl font-normal">Our Services</h1>
@@ -74,129 +74,107 @@
             </div>
         </div>
 
-{{--        <div class="flex flex-col gap-2 w-full pl-12 md:pl-24 py-32">--}}
-{{--            <p class="text-sm font-bold text-blue-800">THE EXTRA MILE</p>--}}
-{{--            <h1 class="text-3xl md:text-6xl font-normal">Additional Services</h1>--}}
-{{--        </div>--}}
+        <div class="flex flex-col gap-2 w-full pl-12 md:pl-24 py-32">
+            <p class="text-sm font-bold text-blue-800">THE EXTRA MILE</p>
+            <h1 class="text-3xl md:text-6xl font-normal">Additional Services</h1>
+        </div>
 
-{{--        <div class="px-6 grid grid-cols-1 md:grid-cols-4 gap-4">--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2">--}}
-{{--                <img src="{{ asset('assets/desihn.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Structural Engineering">--}}
+        <div class="grid grid-cols-12 gap-4 md:px-6">
+            <!-- Structural Engineering (Large) -->
+            <div class="col-span-12 md:col-span-8 relative group rounded-3xl overflow-hidden h-[400px]">
+                <img src="{{ asset('assets/desihn.jpg') }}" class="w-full h-full object-cover"
+                     alt="Structural Engineering">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-8 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-3xl font-medium text-white mb-4">Structural Engineering</h2>
+                        <p class="text-white/90 text-lg">Comprehensive structural analysis and design with innovative solutions for complex building systems.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--                <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
+            <!-- GIS (Medium) -->
+            <div class="col-span-12 md:col-span-4 relative group rounded-3xl overflow-hidden h-[400px]">
+                <img src="{{ asset('assets/gis.jpg') }}" class="w-full h-full object-cover"
+                     alt="GIS">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">GIS</h2>
+                        <p class="text-white/90">Sophisticated spatial data management with custom GIS solutions.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Structural Engineering--}}
-{{--                </h2>--}}
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/mapping.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
+            <!-- Mapping (Small) -->
+            <div class="col-span-12 md:col-span-4 relative group rounded-3xl overflow-hidden h-[300px]">
+                <img src="{{ asset('assets/mapping.jpg') }}" class="w-full h-full object-cover"
+                     alt="Mapping">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">3D Mapping</h2>
+                        <p class="text-white/90">Advanced visualization and terrain modeling.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- MEP (Medium) -->
+            <div class="col-span-12 md:col-span-8 relative group rounded-3xl overflow-hidden h-[300px]">
+                <img src="{{ asset('assets/mep.png') }}" class="w-full h-full object-cover"
+                     alt="MEP">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">MEP Systems</h2>
+                        <p class="text-white/90">Integrated mechanical, electrical, and plumbing solutions for modern buildings.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Mapping and 3D Modeling--}}
-{{--                </h2>--}}
+            <!-- Water Systems (Wide) -->
+            <div class="col-span-12 relative group rounded-3xl overflow-hidden h-[300px]">
+                <img src="{{ asset('assets/watersys.jpg') }}" class="w-full h-full object-cover"
+                     alt="Water Systems">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-8 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-3xl font-medium text-white mb-4">Water Supply Systems</h2>
+                        <p class="text-white/90 text-lg">Sustainable water distribution design with advanced treatment solutions.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/gis.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
+            <!-- Consultancy (Small) -->
+            <div class="col-span-12 md:col-span-4 relative group rounded-3xl overflow-hidden h-[350px]">
+                <img src="{{ asset('assets/consul.jpeg') }}" class="w-full h-full object-cover"
+                     alt="Consultancy">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">Consultancy</h2>
+                        <p class="text-white/90">Expert technical guidance and project planning.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Geographic Information <br>Systems(GIS)--}}
-{{--                </h2>--}}
+            <!-- Swimming Pools (Medium) -->
+            <div class="col-span-12 md:col-span-4 relative group rounded-3xl overflow-hidden h-[350px]">
+                <img src="{{ asset('assets/awim.jpg') }}" class="w-full h-full object-cover"
+                     alt="Swimming Pools">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">Swimming Pools</h2>
+                        <p class="text-white/90">Custom pool design with advanced filtration systems.</p>
+                    </div>
+                </div>
+            </div>
 
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/consul.jpeg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
-
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Consultancy Services--}}
-{{--                </h2>--}}
-
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/survey.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
-
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Surveying--}}
-{{--                </h2>--}}
-
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/mep.png') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 rounded-md opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
-
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    MEP--}}
-{{--                </h2>--}}
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/watersys.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-md">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
-
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Water Supply Systems--}}
-{{--                </h2>--}}
-{{--            </div>--}}
-{{--            <div class="relative group transition-all duration-300 ease-in-out hover:col-span-2 bg-blue-500">--}}
-{{--                <img src="{{ asset('assets/awim.jpg') }}" class="h-96 w-full object-cover rounded-md transition-all duration-300 ease-in-out"--}}
-{{--                     alt="Random image"--}}
-{{--                >--}}
-{{--                 <div class="absolute inset-0 bg-blue-800 bg-opacity-100 rounded-md opacity-0 group-hover:opacity-100--}}
-{{--                 transition-opacity duration-300 ease-in-out flex justify-center items-center">--}}
-{{--                    <h2 class="text-center text-white text-lg">New Text on Hover</h2>--}}
-{{--                </div>--}}
-
-{{--                <h2 class="absolute text-nowrap inset-x-10 bottom-10 text-center text-white text-lg p-6 flex flex-col--}}
-{{--                 justify-center opacity-100 group-hover:opacity-0 bg-blue-800 rounded-md">--}}
-{{--                    Swimming Pools--}}
-{{--                </h2>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+            <!-- Surveying (Medium) -->
+            <div class="col-span-12 md:col-span-4 relative group rounded-3xl overflow-hidden h-[350px]">
+                <img src="{{ asset('assets/survey.jpg') }}" class="w-full h-full object-cover"
+                     alt="Surveying">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    <div class="p-6 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <h2 class="text-2xl font-medium text-white mb-3">Surveying</h2>
+                        <p class="text-white/90">High-precision land surveys and site analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </x-layout>

@@ -1,10 +1,10 @@
 <x-layout>
     @section('title', 'Project')
 
-    <div>
+    <div class="px-6">
         <div class="relative">
             <img src="{{ $project->projectImages->first()->image_path }}" alt="{{ $project->name }}"
-                 class="h-[620px] w-full rounded-md object-cover">
+                 class="h-[620px] w-full rounded-md object-cover object-center">
 
             <!-- Project Details - Text at Bottom Left -->
             <div class="absolute bottom-0 left-0 text-white p-4">
@@ -28,7 +28,7 @@
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="{{ $image->image_path }}" alt="project image" class="rounded-md absolute block
                         w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
-                        object-cover">
+                        object-cover object-center">
                     </div>
                 @endforeach
             </div>
