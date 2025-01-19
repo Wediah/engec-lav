@@ -136,9 +136,7 @@
             </p>
         </div>
         <div >
-            <p class="justify-end">Engec group is an Equal Opportunity Employer - race, color, religion, sex, sexual
-                orientation, gender
-                identity, national origin, disability, status as a protected veteran, or other characteristics protected by applicable law.</p>
+            <p class="justify-end">Engec group is an Equal Opportunity Employer - race, color, religion, sex, national origin, disability, or other characteristics protected by applicable law.</p>
             <a href="#" class="text-sm font-bold">Human Rights Policy</a>
         </div>
         <div>
