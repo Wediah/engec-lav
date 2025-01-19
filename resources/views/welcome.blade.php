@@ -211,8 +211,8 @@
             <hr class="bg-black">
             <div class="bg-white">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 items-center justify-center">
-                    <div class="mx-auto mt-10 grid max-w-lg grid-cols-2 gap-x-2 gap-y-1 sm:grid-cols-3
-                    lg:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none gap-6">
+                    <div class="mx-auto mt-10 grid max-w-lg grid-cols-3 gap-x-3 gap-y-1 sm:grid-cols-3
+                    lg:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none md:gap-6 gap-3">
                         <img class="max-h-12 w-full object-contain" src="{{ asset('assets/looo.jpg') }}"
                              alt="Transistor" width="158"
                              height="48">
