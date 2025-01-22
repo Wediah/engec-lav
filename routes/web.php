@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactInfoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\projectsController;
@@ -18,6 +19,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 Route::get('/project/{slug}', [ProjectsController::class, 'show'])->name('project.show');
+
+Route::post('/customer', [ContactInfoController::class, 'storeContactInfo'])->name('contact.store');
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
