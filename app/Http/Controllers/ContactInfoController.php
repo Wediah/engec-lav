@@ -3,12 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\contactInfo;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use JetBrains\PhpStorm\NoReturn;
 
 class ContactInfoController extends Controller
 {
-    public function storeContactInfo(Request $request): \Illuminate\Http\RedirectResponse
+    public function show(): View|Factory|Application
+    {
+        $contacts = contactInfo::paginate(20);
+
+        return view('contactinfo.contactInfo', compact('contacts'));
+    }
+
+    public function storeContactInfo(Request $request): RedirectResponse
     {
         $validated = $request->validate([
             'first_name' => 'required|max:255|min:2',
@@ -31,5 +41,14 @@ class ContactInfoController extends Controller
         contactInfo::create($contactInfo);
 
         return back()->with('success', 'Thank you for contacting us!');
+    }
+
+    public function delete($id): RedirectResponse
+    {
+        $contactInfo = contactInfo::findOrFail($id);
+
+        $contactInfo->delete();
+
+        return redirect()->intended(route('contact_info', absolute: false));
     }
 }

@@ -30,17 +30,31 @@
             }
         </script>
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
-            <div>
-                <a href="/">
-                    <img src="{{ asset('assets/engeclogo.png') }}" class="h-8" alt="Engec group Logo" />
-                </a>
-            </div>
-
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
+    <body class="font-sans text-black antialiased">
+    <div class="h-screen flex flex-row gap-6 sm:justify-center items-center p-6 bg-gray-100 overflow-hidden">
+        <!-- Image Section -->
+        <div class="relative flex-1 h-full hidden md:block">
+            <img src="{{ asset('assets/learn.jpg') }}" class="h-full w-full rounded-xl object-cover" alt="Engec group Logo" />
+            <div class="absolute inset-x-0 bottom-5 text-white p-4">
+                <p class="text-6xl font-black">Building Dreams, <br> Designing Excellence.</p>
             </div>
         </div>
+
+        <!-- Slot Section -->
+        <div class="w-full sm:max-w-md flex flex-col h-full overflow-hidden">
+            <!-- Logo at the top -->
+            <a href="/" class="flex flex-row gap-2 items-center p-4">
+                <img src="{{ asset('assets/engeclogo.png') }}" alt="Engec logo" class="h-8">
+                <p class="font-bold text-lg">Engec Group</p>
+            </a>
+
+            <!-- Slot content in the middle -->
+            <div class="flex-1 flex items-center justify-center p-4 w-full overflow-hidden">
+                <div class="w-full">
+                    {{ $slot }}
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>

@@ -26,14 +26,16 @@ Route::post('/customer', [ContactInfoController::class, 'storeContactInfo'])->na
 //    return view('dashboard');
 //})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'],function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/admin/project/create', [projectsController::class, 'create'])->name('project.create');
-    Route::post('/admin/project/store', [projectsController::class, 'store'])->name('project.store');
-    Route::post('/admin/project/{id}delete', [projectsController::class, 'delete'])->name('project.delete');
-    Route::get('/admin/dashboard', [projectsController::class, 'dash'])->name('dashboard');
+    Route::get('/project/create', [projectsController::class, 'create'])->name('project.create');
+    Route::post('/project/store', [projectsController::class, 'store'])->name('project.store');
+    Route::post('/project/{id}/delete', [projectsController::class, 'delete'])->name('project.delete');
+    Route::get('/dashboard', [projectsController::class, 'dash'])->name('dashboard');
+    Route::get('/contact-info', [ContactInfoController::class, 'show'])->name('contact_info');
+    Route::post('/contact-info/{id}/delete', [ContactInfoController::class, 'delete'])->name('contact_info.delete');
 });
 
 

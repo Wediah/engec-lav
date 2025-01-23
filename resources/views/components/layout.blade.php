@@ -78,7 +78,7 @@
     </script>
 </div>
 
-<footer class="bg-gradient-to-b from-blue-800 to-black p-6 mt-6 ">
+<footer class="bg-gradient-to-b from-blue-800 to-black p-6  ">
     <div class="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-4 items-center">
         <div>
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">

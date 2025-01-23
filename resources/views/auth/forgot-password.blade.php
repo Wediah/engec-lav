@@ -1,5 +1,8 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+    <p class="text-left text-4xl font-bold text-gray-800 mb-2">
+        Every reset <br> is a fresh start. <br> Let’s make it count!
+    </p>
+    <div class="mb-4 text-sm text-gray-800">
         {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
     </div>
 
